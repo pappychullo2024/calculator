@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/1134bceb92.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Calculato</title>
+  </head>
+  <body>
+    <section>
+        <input type='text' id='result' class ='screen' readonly />
+      <div class="keys">
+        <input type='button' value = 'AC' onclick="clearScreen()" class="clear"/>
+        <input type="button" value="1/2" class="operator" onClick="half()" id="operato-2"></input>
+        <input type="button" value="%" class="operator" onClick="percentage() " id="operato-3" ></input>
+        <input type="button" value="/" class="operator" onClick="display('/')"></input>
+        <input type="button" value="7" class="button" onClick="display('7')"></input>
+        <input type="button" value="8" class="button" onClick="display('8')"></input>
+        <input type="button" value="9" class="button" onClick="display('9')"></input>
+        <input type="button" value="x" class="operator" onClick="display('*')"></input>
+        <input type="button" value="4" class="button" onClick="display('4')"></input>
+        <input type="button" value="5" class="button" onClick="display('5')"></input>
+        <input type="button" value="6" class="button" onClick="display('6')"></input>
+        <input type="button" value="-" class="operator" onClick="display('-')"></input>
+        <input type="button" value="1" class="button" onClick="display('1')"></input>
+        <input type="button" value="2" class="button" onClick="display('2')"></input>
+        <input type="button" value="3" class="button" onClick="display('3')"></input>
+        <input type="button" value="+" class="operator" onClick="display('+')"></input>
+        <input type="button" value="0" class="button" onClick="display('0')"></input>
+        <input type="button" value="." class="button" onClick="display('.')"></input>
+        <input type="button" value= "=" class="button equal-sign" onClick="solve()"></input>
+        
+    
+    </div> 
+    </section>
+
+    <main></main>
+    <script src="script.js"></script>
+  </body>
+</html>
